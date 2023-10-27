@@ -9,7 +9,7 @@
     2. Candidato Mariazinha
     3. Nulo
     4. Branco
-    Entre com o seu voto:
+    Entre com o seu voto: 
 
     O programa deverá ler os votos dos eleitores e, quando for entrado o número 0, apresentar as seguintes
     informações:
@@ -37,7 +37,7 @@ while(voto != 0){
         case (4): branco++; break;
     }
 }
-console.log(`Quantidade de votos gerais: ${jaozinho+mariazinha+nulo+branco} <br> Quantidade de votos do Joãozinho${jaozinho}<br>Quantidade de votos da Mariazinha: ${mariazinha} <br> Porcentagem de votos em branco: ${(branco/(jaozinho+mariazinha+nulo+branco)*100).toFixed(1)}% <br> Porcentagem de votos nulos: ${(nulo/(jaozinho+mariazinha+nulo+branco)*100).toFixed(1)}% <br> ${(jaozinho > mariazinha)? "joaozinho foi o vencedor" : "mariazinha foi a vencedora"}`)
+document.write(`Quantidade de votos gerais: ${jaozinho+mariazinha+nulo+branco} <br> Quantidade de votos do Joãozinho${jaozinho}<br>Quantidade de votos da Mariazinha: ${mariazinha} <br> Porcentagem de votos em branco: ${(branco/(jaozinho+mariazinha+nulo+branco)*100).toFixed(1)}% <br> Porcentagem de votos nulos: ${(nulo/(jaozinho+mariazinha+nulo+branco)*100).toFixed(1)}% <br> ${(jaozinho > mariazinha)? "joaozinho foi o vencedor" : "mariazinha foi a vencedora"}`)
 
     //Processamento
 

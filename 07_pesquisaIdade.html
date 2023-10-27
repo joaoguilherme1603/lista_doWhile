@@ -8,7 +8,7 @@
     b) A maior e a menor idade do grupo;
     c) A quantidade de mulheres na região;
     d) A idade e o sexo da pessoa que possui o menor salário;
-
+ 
     Finalize a entrada de dados ao ser digitada uma idade negativa.
     */
 
@@ -19,6 +19,8 @@
     let mulheres = 0;
     let idade2 = 0;
     let quantidadeMulheres = 0;
+    
+    //Processamento 
     while (idade1 >= 0) {
         idade1 = Number(prompt(`Informe sua idade`));
         if (idade1 < 0) { break };
@@ -32,6 +34,9 @@
     let salarioMedia = salario.reduce((soma, valor) => soma + valor, 0) / salario.length;
     let maiorIdade = Math.max(...idade);
     let menorIdade = Math.min(...idade);
+
+    //Saída
+ 
     document.write(`A media dos salarios da região é: R$${salarioMedia.toFixed(2)} <br> A maior idade da região é ${maiorIdade} anos <br> A menor idade da região é ${menorIdade} anos <br> A quantidade de mulheres na região: ${quantidadeMulheres} <br>`);
     let menorSalario = Math.min(...salario);
     document.write(`Pessoa(s) com menor(res) salario(s): <br>`);
@@ -41,11 +46,5 @@
         };
     };
 
-
-
-    //Processamento
-
-
-    //Saída
 
 </script>
