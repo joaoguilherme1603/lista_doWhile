@@ -14,12 +14,12 @@ let senha = Number(prompt(`Informe sua senha: `));
 
     //Processamento
 while (usuario === senha) {
-    alert(`Valor invalido, NÃO PODE SER IGUAL O NOME DO USUÁRIO!!`);
 
     usuario = prompt(`Informe o nome do usuário:`);
-    senha = Number(prompt(`Informe sua senha: `));
+    senha = prompt(`Informe sua senha. A senha não pode ser igual ao nome de usuario`);
 }
+console.log("aprovado")
 
     //Saída
-alert(`login valido`);
+
 </script>

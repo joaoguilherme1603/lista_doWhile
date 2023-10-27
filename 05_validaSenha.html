@@ -7,7 +7,21 @@
 
     //Entrada
 
+    let senha = Number(prompt("Informe uma senha formada de quatro numeros inteiros").trim());
 
+    while (isNaN(senha) || Number.isInteger(senha) == false || (senha / 1000) < 1 || (senha/1000) > 10) {
+        senha = 0;
+        senha = Number(prompt("Tente novamente").trim());
+    }
+
+    let senha2 = Number(prompt("Informe para verificar").trim());
+
+    while (senha != senha2) {
+        senha2 = 0;
+        senha2 = Number(prompt("Informe novamente!").trim());
+    }
+
+    console.log("Aprovado");
     //Processamento
 
 
